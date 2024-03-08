@@ -26,7 +26,7 @@ const Form = () => {
                     <input type="date" id="date" name="date" max="2024-12-31"/>
 
                     <label htmlFor="time">Time</label>
-                    <select name="time" id="time">
+                    <select className="optionVal" name="time" id="time">
                         <option value="">--Please choose the time--</option>
                         <option value="13:00">1:00 AM</option>
                         <option value="15:00">15:00</option>
