@@ -1,27 +1,34 @@
 #root {
   margin: 0 auto;
   padding: 0;
-  /*text-align: center;*/
 }
 
 body{
   padding: 0;
   margin: 0;
+  font-size: 18px;
 }
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: white;
-  width: 100%;
-  height: 100vh;
+  width:100%;
+  height:100vh;
   background-image: url("assets/images/clem-onojeghuo-zlABb6Gke24-unsplash (1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main-heading{
-  text-align: left;
+.appHeading{
+  background-color: rgba(0,17,12, 0.7);
+  width: 100%;
+  font-size: 24px;
+  align-self:start;
+  padding: 60px;
+}
+
+.formHolder {
+  align-self: center;
+  margin-top:100px;
 }
