@@ -4,10 +4,10 @@ body {
     width: 100vw;
     height: 100vh;
     font-size: 18px;
-    background-image: url("assets/images/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+    background-image: url("assets/images/adrien-olichon-ZgREXhl8ER0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .appHeading {
-    background-color: rgba(0, 17, 12, 0.7);
+    background-color:rgb(70,25,10, 0.7);
     width: 100%;
     font-size: 24px;
     align-self: start;
