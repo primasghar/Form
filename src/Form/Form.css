@@ -83,7 +83,9 @@
     margin: 20px 0;
 }
 
-.button:hover, .button:focus, input:hover,input:focus, .optionVal:hover,.optionVal:focus {
+.button:hover, .inputs:hover, .optionVal:hover, .dateInput:hover, .timeVal:hover,
+.button:focus, .inputs:focus, .optionVal:focus, .dateInput:focus, .timeVal:focus {
+    color: black;
     background-color: rgb(253,139,29,0.7);
     border: 4px solid black;
     cursor: pointer;

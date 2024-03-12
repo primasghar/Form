@@ -3,7 +3,7 @@ import './Form.css';
 const Form = () => {
     return (
         <div className="card">
-            <h2 className="mainHeading">Reserve Table</h2>
+            <h2 className="mainHeading">Reservation Form </h2>
 
             <form className="formContainer">
                 <h3 className="subHeading">Personal details </h3>
@@ -55,8 +55,14 @@ const Form = () => {
                             <option value="others" className="optionVal">Others</option>
                         </select>
 
-                        <label htmlFor="ifOthers" className="label">If others above, please specify</label>
-                        <input className="inputs" type="text" id="ifOthers" name="otherSpecify"/></div>
+                        <label htmlFor="ifOthers" className="label">If others reservation type above, please specify</label>
+                        <input className="inputs" type="text" id="ifOthers" name="otherSpecify"/>
+
+                        <label htmlFor="specialRequest" className="label">Any special requests</label>
+                        <textarea className="inputs" id="specialRequest" name="otherSpecify" rows= {4} cols={50}/>
+
+
+                    </div>
                 </section>
                 <button className="button">Submit</button>
             </form>
