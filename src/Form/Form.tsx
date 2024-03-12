@@ -9,36 +9,39 @@ const Form = () => {
                 <h3 className="subHeading">Personal details </h3>
                 <section className="sectionOne">
                     <label htmlFor="firstname" className="label">First Name</label>
-                    <input type="text" id="firstname"/>
+                    <input className="inputs" type="text" id="firstname"/>
 
                     <label htmlFor="lastname" className="label">Last Name</label>
-                    <input type="text" id="lastname"/>
+                    <input className="inputs" type="text" id="lastname"/>
 
                     <label htmlFor="email" className="label">Email</label>
-                    <input type="text" id="email"/>
+                    <input className="inputs" type="text" id="email"/>
 
                     <label htmlFor="phone" className="label">Phone</label>
-                    <input type="number" id="phone"/>
+                    <input className="inputs" type="number" id="phone"/>
                 </section>
 
                 <section className="sectionTwo">
                     <h3 className="subHeading">Reservation details </h3>
+
+                    <div className="dateTime">
+                        <label htmlFor="date" className="label">Date</label>
+                        <input className="dateInput" type="date" id="date" name="date" max="2024-12-31"/>
+
+                        <label htmlFor="time" className="label">Time</label>
+                        <select className="timeVal" name="time" id="time">
+                            <option value="13:00" className="timeVal">13:00</option>
+                            <option value="15:00" className="timeVal">15:00</option>
+                            <option value="19:00" className="timeVal">19:00</option>
+                            <option value="21:00" className="timeVal">21:00</option>
+                            <option value="23:00" className="timeVal">23:00</option>
+                        </select></div>
+
                     <div className="sectionTwoInputs">
 
                         <label htmlFor="totalGuests" className="label">Number of Guests</label>
-                        <input type="text" id="totalGuests"/>
+                        <input className="inputs" type="text" id="totalGuests"/>
 
-                        <label htmlFor="date" className="label">Date</label>
-                        <input type="date" id="date" name="date" max="2024-12-31"/>
-
-                        <label htmlFor="time" className="label">Time</label>
-                        <select className="optionVal" name="time" id="time">
-                            <option value="13:00" className="optionVal">13:00</option>
-                            <option value="15:00" className="optionVal">15:00</option>
-                            <option value="19:00" className="optionVal">19:00</option>
-                            <option value="21:00" className="optionVal">21:00</option>
-                            <option value="23:00" className="optionVal">23:00</option>
-                        </select>
 
                         <label htmlFor="type" className="label">Reservation type</label>
                         <select className="optionVal" name="type" id="type">
@@ -53,7 +56,7 @@ const Form = () => {
                         </select>
 
                         <label htmlFor="ifOthers" className="label">If others above, please specify</label>
-                        <input type="text" id="ifOthers" name="otherSpecify"/></div>
+                        <input className="inputs" type="text" id="ifOthers" name="otherSpecify"/></div>
                 </section>
                 <button className="button">Submit</button>
             </form>

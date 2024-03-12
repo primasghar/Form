@@ -38,7 +38,7 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-input, .optionVal{
+.inputs, .optionVal, .dateInput, .timeVal{
     font-size: 18px;
     font-weight: 500;
     border: 4px solid transparent;
@@ -47,11 +47,27 @@ input, .optionVal{
     margin: 6px 0;
 }
 
-input {
+.inputs {
     width: 400px;
 }
+
 .optionVal {
     width: 420px;
+}
+
+.dateTime {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 21px 1fr;
+    row-gap: 16px;
+}
+
+.dateInput {
+    grid-row: 2;
+}
+
+.dateInput, .timeVal {
+    width: 190px;
 }
 
 .button {
