@@ -5,12 +5,11 @@ function App() {
     return (
         <div className="container">
             <header className="appHeading">
-                <h1 >Reservation Form</h1>
+                <h1>Table Reservation</h1>
             </header>
             <main className="formHolder">
                 <Form></Form>
             </main>
-
         </div>
 
     )

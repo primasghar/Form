@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0 auto;
     width: 100vw;
-    height: 100vh;
     font-size: 18px;
     background-image: url("assets/images/adrien-olichon-ZgREXhl8ER0-unsplash.jpg");
     background-repeat: no-repeat;
@@ -19,10 +18,10 @@ body {
 
 .appHeading {
     background-color:rgb(70,25,10, 0.7);
-    width: 100%;
     font-size: 24px;
     align-self: start;
     padding: 30px;
+    width: 100vw;
 }
 
 .formHolder {
