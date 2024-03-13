@@ -41,7 +41,7 @@
     font-size: 18px;
     font-weight: 700;
     border-radius: 6px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px hsl(15, 75%, 26%);
 }
 
 .inputs, .optionVal, .fInput, .lInput, .dateInput, .timeVal {
@@ -67,7 +67,7 @@
 
 .button {
     color: inherit;
-    background-color: rgb(26,23,22, 0.1);
+    background-color: hsl(15, 75%, 16%);
     align-self: center;
     font-size: 20px;
     font-weight: 600;
@@ -78,10 +78,13 @@
     margin: 20px 0;
 }
 
-.button:hover, .inputs:hover, .optionVal:hover, .fInput:hover, .lInput:hover, .dateInput:hover, .timeVal:hover,
-.button:focus, .inputs:focus, .optionVal:focus, .fInput:focus, .lInput:focus, .dateInput:focus, .timeVal:focus {
-    color: rgb(255,255,252);
-    background-color: rgb(26,23,22);
+ .inputs:hover, .optionVal:hover, .fInput:hover, .lInput:hover, .dateInput:hover, .timeVal:hover,
+ .inputs:focus, .optionVal:focus, .fInput:focus, .lInput:focus, .dateInput:focus, .timeVal:focus {
+    background-color: hsl(15, 75%, 90%);
     cursor: pointer;
+}
+
+.button:hover,.button:focus {
+    background-color: hsl(15, 75%, 20%);
 }
 
