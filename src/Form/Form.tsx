@@ -11,11 +11,12 @@ const Form = () => {
             <form className="formContainer">
                 <h3 className="subHeading">Personal details </h3>
                 <section className="sectionOne">
+                    <div className="fullName">
                     <label htmlFor="firstname" className="label" >First Name</label>
-                    <input className="inputs" type="text" id="firstname"  name="fname"/>
+                    <input className="fInput" type="text" id="firstname"  name="fname"/>
 
                     <label htmlFor="lastname" className="label">Last Name</label>
-                    <input className="inputs" type="text" id="lastname"  name="lname"/>
+                    <input className="lInput" type="text" id="lastname"  name="lname"/> </div>
 
                     <label htmlFor="email" className="label">Email</label>
                     <input className="inputs" type="text" id="email"  name="email"/>
@@ -39,13 +40,10 @@ const Form = () => {
                             <option value="21:00" className="timeVal">21:00</option>
                             <option value="23:00" className="timeVal">23:00</option>
                         </select></div>
+                    <label htmlFor="totalGuests" className="label">Number of Guests</label>
+                    <input className="inputs" type="text" id="totalGuests" name="totalguests"/>
 
                     <div className="aboutReservation">
-
-                        <label htmlFor="totalGuests" className="label">Number of Guests</label>
-                        <input className="inputs" type="text" id="totalGuests" name="totalguests"/>
-
-
                         <label htmlFor="type" className="label">Reservation type</label>
                         <select className="optionVal" name="type" id="type">
                             <option value="lunch" className="optionVal">Lunch</option>

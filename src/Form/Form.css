@@ -19,9 +19,8 @@
     gap:10px;
 }
 
-.sectionTwo {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.sectionTwo{
+    margin: 20px 0;
     border-top: 1px solid rgb(253,139,29, 0.7);
 }
 
@@ -38,7 +37,7 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-.inputs, .optionVal, .dateInput, .timeVal{
+.inputs, .optionVal, .fInput, .lInput, .dateInput, .timeVal{
     font-size: 18px;
     font-weight: 500;
     border: 4px solid transparent;
@@ -55,18 +54,18 @@
     width: 420px;
 }
 
-.dateTime {
+.dateTime, .fullName {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 21px 1fr;
     row-gap: 16px;
 }
 
-.dateInput {
+.dateInput, .fInput {
     grid-row: 2;
 }
 
-.dateInput, .timeVal {
+.dateInput, .timeVal, .fInput, .lInput{
     width: 190px;
 }
 
@@ -83,8 +82,8 @@
     margin: 20px 0;
 }
 
-.button:hover, .inputs:hover, .optionVal:hover, .dateInput:hover, .timeVal:hover,
-.button:focus, .inputs:focus, .optionVal:focus, .dateInput:focus, .timeVal:focus {
+.button:hover, .inputs:hover, .optionVal:hover, .fInput:hover,.lInput:hover, .dateInput:hover, .timeVal:hover,
+.button:focus, .inputs:focus, .optionVal:focus, .fInput:focus,.lInput:focus,.dateInput:focus, .timeVal:focus {
     color: black;
     background-color: rgb(253,139,29,0.7);
     border: 4px solid black;
