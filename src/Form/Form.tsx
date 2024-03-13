@@ -10,6 +10,7 @@ const Form = () => {
 
             <form className="formContainer">
                 <h3 className="subHeading">Personal details </h3>
+
                 <section className="sectionOne">
                     <div className="fullName">
                     <label htmlFor="firstname" className="label" >First Name</label>
