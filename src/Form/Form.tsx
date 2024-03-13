@@ -1,24 +1,27 @@
 import './Form.css';
 
 const Form = () => {
+
+    const date = new Date().toLocaleDateString();
+
     return (
         <div className="card">
-            <h2 className="mainHeading">Reservation Form </h2>
+            <h2 className="formHeading">Reservation Form </h2>
 
             <form className="formContainer">
                 <h3 className="subHeading">Personal details </h3>
                 <section className="sectionOne">
-                    <label htmlFor="firstname" className="label">First Name</label>
-                    <input className="inputs" type="text" id="firstname"/>
+                    <label htmlFor="firstname" className="label" >First Name</label>
+                    <input className="inputs" type="text" id="firstname"  name="fname"/>
 
                     <label htmlFor="lastname" className="label">Last Name</label>
-                    <input className="inputs" type="text" id="lastname"/>
+                    <input className="inputs" type="text" id="lastname"  name="lname"/>
 
                     <label htmlFor="email" className="label">Email</label>
-                    <input className="inputs" type="text" id="email"/>
+                    <input className="inputs" type="text" id="email"  name="email"/>
 
                     <label htmlFor="phone" className="label">Phone</label>
-                    <input className="inputs" type="number" id="phone"/>
+                    <input className="inputs" type="number" id="phone" name="phone"/>
                 </section>
 
                 <section className="sectionTwo">
@@ -26,10 +29,10 @@ const Form = () => {
 
                     <div className="dateTime">
                         <label htmlFor="date" className="label">Date</label>
-                        <input className="dateInput" type="date" id="date" name="date" max="2024-12-31"/>
+                        <input className="dateInput" type="date" id="date" name="date" min={date} max="31/12/2024"/>
 
                         <label htmlFor="time" className="label">Time</label>
-                        <select className="timeVal" name="time" id="time">
+                        <select className="timeVal" id="time" name="time">
                             <option value="13:00" className="timeVal">13:00</option>
                             <option value="15:00" className="timeVal">15:00</option>
                             <option value="19:00" className="timeVal">19:00</option>
@@ -37,10 +40,10 @@ const Form = () => {
                             <option value="23:00" className="timeVal">23:00</option>
                         </select></div>
 
-                    <div className="sectionTwoInputs">
+                    <div className="aboutReservation">
 
                         <label htmlFor="totalGuests" className="label">Number of Guests</label>
-                        <input className="inputs" type="text" id="totalGuests"/>
+                        <input className="inputs" type="text" id="totalGuests" name="totalguests"/>
 
 
                         <label htmlFor="type" className="label">Reservation type</label>
@@ -60,8 +63,6 @@ const Form = () => {
 
                         <label htmlFor="specialRequest" className="label">Any special requests</label>
                         <textarea className="inputs" id="specialRequest" name="otherSpecify" rows= {4} cols={50}/>
-
-
                     </div>
                 </section>
                 <button className="button">Submit</button>
