@@ -13,11 +13,11 @@ const Form = () => {
 
                 <section className="sectionOne">
                     <div className="fullName">
-                    <label htmlFor="firstname" className="label" >First Name</label>
-                    <input className="fInput" type="text" id="firstname"  name="fname"/>
+                    <label htmlFor="firstName" className="label" >First Name</label>
+                    <input type="text" id="firstName"  name="fname"/>
 
-                    <label htmlFor="lastname" className="label">Last Name</label>
-                    <input className="lInput" type="text" id="lastname"  name="lname"/> </div>
+                    <label htmlFor="lastName" className="label">Last Name</label>
+                    <input type="text" id="lastName"  name="lname"/> </div>
 
                     <label htmlFor="email" className="label">Email</label>
                     <input className="inputs" type="text" id="email"  name="email"/>
