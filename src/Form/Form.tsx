@@ -31,10 +31,10 @@ const Form = () => {
 
                     <div className="dateTime">
                         <label htmlFor="date" className="label">Date</label>
-                        <input className="dateInput" type="date" id="date" name="date" min={date} max="31/12/2024"/>
+                        <input type="date" id="date" name="date" min={date} max="31/12/2024"/>
 
                         <label htmlFor="time" className="label">Time</label>
-                        <select className="timeVal" id="time" name="time">
+                        <select id="time" name="time">
                             <option value="13:00" className="timeVal">13:00</option>
                             <option value="15:00" className="timeVal">15:00</option>
                             <option value="19:00" className="timeVal">19:00</option>
