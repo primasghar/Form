@@ -38,6 +38,10 @@
     margin-bottom: 0;
 }
 
+.asterisk{
+    color: yellow;
+    font-weight: bold;
+}
 
 .label {
     border-radius: 6px;
