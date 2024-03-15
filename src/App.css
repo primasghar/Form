@@ -19,8 +19,11 @@ body {
     background-color:rgba(70,25,10, 0.9);
     font-size: 24px;
     align-self: start;
-    padding: 10px 30px;
     width: 100vw;
+}
+
+.pageHead{
+    margin-left: 32px;
 }
 
 .formHolder {
