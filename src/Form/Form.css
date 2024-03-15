@@ -8,7 +8,7 @@
     text-align: left;
     border-radius: 4px;
     padding: 0 40px;
-    border: 4px solid rgb(255,255,252);
+    border: 2px solid rgb(255,255,252);
     background-color: rgba(70, 25, 10, 0.9);
 }
 
@@ -16,7 +16,7 @@
 .sectionOne, .sectionTwo, .aboutReservation {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:4px;
 }
 
 .sectionTwo {
@@ -33,19 +33,18 @@
 .formHeading {
     font-size: 32px;
     border-bottom: 1px solid rgb(255,255,252);
-    padding-bottom: 16px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 
 .label {
-    font-size: 18px;
-    font-weight: 700;
     border-radius: 6px;
     text-shadow: 2px 2px 4px hsl(15, 75%, 26%);
 }
 
 .inputs, .optionVal, #firstName, #lastName, #date, #time {
-    font-size: 18px;
     font-weight: 500;
     border: 4px solid transparent;
     border-radius: 4px;
@@ -58,7 +57,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 21px 1fr;
     align-items: center;
-    gap: 16px;
+    column-gap: 16px;
+    row-gap: 4px;
 }
 
 #date, #firstName {
@@ -69,13 +69,12 @@
     color: inherit;
     background-color: hsl(15, 75%, 16%);
     align-self: center;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
     border-radius: 60px;
-    border: 4px solid rgb(255,255,252);
+    border: 2px solid rgb(255,255,252);
     padding: 10px 26px;
-    width: 160px;
-    margin: 20px 0;
+    width: 140px;
+    margin: 10px 0;
 }
 
  .inputs:hover, .optionVal:hover, #firstName:hover, #lastName:hover, #date:hover, #time:hover,
