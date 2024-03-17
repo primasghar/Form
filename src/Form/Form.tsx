@@ -37,6 +37,7 @@ const Form = () => {
 
                         <label htmlFor="time" className="label">Time <span className="asterisk"> * </span></label>
                         <select id="time" name="time" required>
+                            <option value="selectTime" className="timeVal">Choose time</option>
                             <option value="13:00" className="timeVal">13:00</option>
                             <option value="15:00" className="timeVal">15:00</option>
                             <option value="19:00" className="timeVal">19:00</option>
